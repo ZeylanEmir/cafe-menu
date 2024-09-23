@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;  /* Убираем горизонтальный скролл */
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;  /* Ограничиваем максимальную ширину слайдера */
+    margin: 20px auto; /* Центрируем слайдер */
+    text-align: center;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 600px; /* Устанавливаем максимальную ширину изображения */
+    height: auto;     /* Сохраняем пропорции изображения */
+    display: none;    /* Скрываем все изображения */
+    margin: 0 auto;   /* Центрируем изображение */
+}
+
+.slider img.active {
+    display: block; /* Показываем только активное изображение */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#logo {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+#currentImage {
+    display: block;
+    margin: 20px auto;
+    width: 100%;  /* Изображение занимает всю ширину слайдера */
+    max-width: 800px; /* Ограничиваем максимальную ширину изображения */
+    height: auto; /* Высота сохраняет пропорции изображения */
+}

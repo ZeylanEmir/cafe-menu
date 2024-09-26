@@ -82,3 +82,35 @@ footer {
     max-width: 800px; /* Ограничиваем максимальную ширину изображения */
     height: auto; /* Высота сохраняет пропорции изображения */
 }
+
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px; /* Отступ сверху для футера */
+    position: relative; /* Убедитесь, что футер не закреплен */
+}
+
+
+.accordion {
+    margin-bottom: 20px; /* Добавляет отступ между аккордеоном и футером */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 576px) {
+    footer {
+        margin-top: 30px; /* Добавлен больший отступ для мобильных экранов */
+    }
+}
+
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.menu-item p {
+    margin: 0;
+}

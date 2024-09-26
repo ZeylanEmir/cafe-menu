@@ -2,10 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кафе "Рахат"</title>
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -14,15 +17,820 @@
         <h2>Место для ценителей хорошего мяса!</h2>
     </header>
 
-    <section id="gallery">
-        <h3>Наше меню</h3>
-        <div class="slider">
-            <img class="slide" src="menu/menu1-1.png" alt="Сеты">
-            <img class="slide" src="menu/menu1-2.png" alt="Основное меню">
-            <img class="slide" src="menu/menu-2-1.jpg" alt="Мангал">
+    <section id="menu" class="container md-4">
+        <h3 class="text-center mt-2">Наше меню</h3>
+
+
+        <div class="accordion" id="menuAccordion">
+            <!-- Категория: Салаты -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSalads">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSalads" aria-expanded="false" aria-controls="collapseSalads">
+                        Салаты
+                    </button>
+                </h2>
+                <div id="collapseSalads" class="accordion-collapse collapse" aria-labelledby="headingSalads" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Ачичук</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Греческий</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Цезарь с курицей</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Цезарь с сёмгой</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Тайский</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Хрустящие баклажаны</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Свежий</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Оливье</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Малибу</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Гнездо глухаря</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Кавказская нарезка</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSoups">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoups" aria-expanded="false" aria-controls="collapseSoups">
+                        Супы
+                    </button>
+                </h2>
+                <div id="collapseSoups" class="accordion-collapse collapse" aria-labelledby="headingSoups" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Шорпа из баранины</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Шорпа из говядины</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Пельмени по-домашнему</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Солянка</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Борщ</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Рамен куриный</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Рамен говяжий</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Лагман по-домашнему</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingMainCourses">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMainCourses" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Вторые блюда
+                    </button>
+                </h2>
+                <div id="collapseMainCourses" class="accordion-collapse collapse" aria-labelledby="headingMainCourses" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Плов ташкентский</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Плов ханский</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Казан-кебаб</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Куырдак из говядины</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Куырдак из конины</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Гуйру лагман</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Суйру лагман</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Цомян из говядины</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Цомян из курицы</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Узбекские манты</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Манты жареные</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Курица с овощами</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Говядина с овощами</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Курица с грибами в сливочном соусе</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Жареный карась</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бефстроганов</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бешбармак</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Нарын</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Табака ташкентский</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бифштекс</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSnacks">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSnacks" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Закуски
+                    </button>
+                </h2>
+                <div id="collapseSnacks" class="accordion-collapse collapse" aria-labelledby="headingSnacks" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бараньи семечки 300 гр</p>
+                                    <p class="mb-0">1890 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Чесночные гренки 6 шт</p>
+                                    <p class="mb-0">790 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Хрустящие крылышки 8 шт</p>
+                                    <p class="mb-0">1390 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Жареный чечил</p>
+                                    <p class="mb-0">1290 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Охотничьи колбаски 6 шт</p>
+                                    <p class="mb-0">1390 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Луковые кольца 6 шт</p>
+                                    <p class="mb-0">790 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Пивные креветки 200 гр</p>
+                                    <p class="mb-0">2490 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Сырные палочки 6 шт</p>
+                                    <p class="mb-0">1290 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Стрипсы 6 шт</p>
+                                    <p class="mb-0">990 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Сельд по-русски</p>
+                                    <p class="mb-0">1490 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Нагетсы</p>
+                                    <p class="mb-0">1290 тенге</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSet1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSet1" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Сет #1
+                    </button>
+                </h2>
+                <div id="collapseSet1" class="accordion-collapse collapse" aria-labelledby="headingSet1" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-6 text-start">
+                                <p>Фри 100 гр</p>
+                                <p>Чесночные гренки</p>
+                                <p>Охотничьи колбаски 5 шт</p>                                                          
+                            </div>
+                            <div class="col-6 text-end">
+                                <p><strong>Общая цена: 2500 тенге</strong></p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSet2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSet2" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Сет #2
+                    </button>
+                </h2>
+                <div id="collapseSet2" class="accordion-collapse collapse" aria-labelledby="headingSet2" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-6 text-start">
+                                <p>Картофельные дольки 100 гр</p>
+                                <p>Луковые кольца 6 шт</p>
+                                <p>Жареный чечил 80 гр</p>
+                                <p>Охотничьи колбаски 5 шт</p>
+                                <p>Сырные палочки 5 шт</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p><strong>Общая цена: 4900 тенге</strong></p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSet3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSet3" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Сет #3
+                    </button>
+                </h2>
+                <div id="collapseSet3" class="accordion-collapse collapse" aria-labelledby="headingSet3" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-6 text-start">
+                                <p>Фри 100 гр</p>
+                                <p>Нагетсы 6 шт</p>
+                                <p>Стрипсы 6 шт</p>
+                                <p>Пивные креветки 200 гр</p>
+                                <p>Луковые кольца 6 шт</p>
+                                <p>Охотничьи колбаски 5 шт</p>
+                                <p>Чесночные гренки 5 шт</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p><strong>Общая цена: 8900 тенге</strong></p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-2">Блюда на компанию</h3>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSet4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSet4" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Ассорти из шашлыков
+                    </button>
+                </h2>
+                <div id="collapseSet4" class="accordion-collapse collapse" aria-labelledby="headingSet4" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-6 text-start">
+                                <p>Баранина</p>
+                                <p>Окорочка</p>
+                                <p>Утиное филе</p>
+                                <p>Рулет из фарша</p>
+                                <p>Овощной</p>
+                                <p>Шампиньоны</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p><strong>Общая цена: 8500 тенге тенге</strong></p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSet5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSet5" aria-expanded="false" aria-controls="collapseMainCourses">
+                        На 5 персон
+                    </button>
+                </h2>
+                <div id="collapseSet5" class="accordion-collapse collapse" aria-labelledby="headingSet5" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Плов ташкентский</p>
+                                    <p class="mb-0">8590 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Плов ханский</p>
+                                    <p class="mb-0">9990 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Казан-кебаб</p>
+                                    <p class="mb-0">14990 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Куырдак из баранины</p>
+                                    <p class="mb-0">14990 тенге</p>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-2">На мангале</h3>
+            
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingKebabs">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKebabs" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Шашлыки
+                    </button>
+                </h2>
+                <div id="collapseKebabs" class="accordion-collapse collapse" aria-labelledby="headingKebabs" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Баранина</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Баранина антрекот</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Рулет из фарша</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Люля кебаб</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Фарш с сыром</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Филе утиное</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Окорочка</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Крылышки</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бедро</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Голень</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Овощной</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Шампиньоны</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingStakes">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStakes" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Стейки
+                    </button>
+                </h2>
+                <div id="collapseStakes" class="accordion-collapse collapse" aria-labelledby="headingStakes" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Тибон</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Рибай</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Куриное филе</p>
+                                    <p class="mb-0">1500 тенге</p>
+                                    <p class="mb-0">+Овощи на гриле</p>
+                                    <p class="mb-0">+Соус</p>
+                                    <p class="mb-0">2290 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Баранина спинка</p>
+                                    <p class="mb-0">2500 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Вак-мак</p>
+                                    <p class="mb-0">800 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Картошка</p>
+                                    <p class="mb-0">600 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Сёмга</p>
+                                    <p class="mb-0">4900 тенге</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Ковбой</p>
+                                    <p class="mb-0">Уточните цену у официанта</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Пангасиус</p>
+                                    <p class="mb-0">Уточните цену у официанта</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бон филе</p>
+                                    <p class="mb-0">Уточните цену у официанта</p>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Контур филе</p>
+                                    <p class="mb-0">Уточните цену у официанта</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-2">Алкогольное меню</h3>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlcohol">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlcohol" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Водка
+                    </button>
+                </h2>
+                <div id="collapseAlcohol" class="accordion-collapse collapse" aria-labelledby="headingAlcohol" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Kyzylzhar</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 600 тенге</p>
+                                        <p class="mb-0">500 мл- 6000 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Godunoff gold</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 650 тенге</p>
+                                        <p class="mb-0">500 мл- 6500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Godunoff platinum</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 700 тенге</p>
+                                        <p class="mb-0">500 мл- 7000 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Nemiroff</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 900 тенге</p>
+                                        <p class="mb-0">500 мл- 9000 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Absolut</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 1200 тенге</p>
+                                        <p class="mb-0">500 мл- 12000 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Morosha</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 650 тенге</p>
+                                        <p class="mb-0">500 мл- 6500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Зелёная марка</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 700 тенге</p>
+                                        <p class="mb-0">500 мл- 7000 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Хортица</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 650 тенге</p>
+                                        <p class="mb-0">500 мл- 6500 тенге</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlcohol2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlcohol2" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Игристые вина
+                    </button>
+                </h2>
+                <div id="collapseAlcohol2" class="accordion-collapse collapse" aria-labelledby="headingAlcohol2" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Asti Martini</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">750 мл - 13000 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Lambrusco розовое полусладкое</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">750 мл - 8000 тенге</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlcohol3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlcohol3" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Вино
+                    </button>
+                </h2>
+                <div id="collapseAlcohol3" class="accordion-collapse collapse" aria-labelledby="headingAlcohol3" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Алазанская долина, Красное, Белое, Полусладкое</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">1600/7500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Саперави (красное сухое)</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">1600/7500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Цинандали (белое сухое)</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">1600/7500 тенге</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlcohol4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlcohol4" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Коньяк
+                    </button>
+                </h2>
+                <div id="collapseAlcohol4" class="accordion-collapse collapse" aria-labelledby="headingAlcohol4" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бахус Казахстан 3 звезды</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 650 тенге</p>
+                                        <p class="mb-0">500 мл- 6500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Бахус Казахстан 5 звёзд</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 750 тенге</p>
+                                        <p class="mb-0">500 мл- 7500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Арарат 3 звезды</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 1000 тенге</p>
+                                        <p class="mb-0">500 мл- 9500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Арарат 5 звёзд</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 1200 тенге</p>
+                                        <p class="mb-0">500 мл- 11000 тенге</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlcohol5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlcohol5" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Пиво бутылочное
+                    </button>
+                </h2>
+                <div id="collapseAlcohol5" class="accordion-collapse collapse" aria-labelledby="headingAlcohol5" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Heineken 0.5</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">1500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Miller 0.5</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">1500 тенге</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlcohol6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlcohol6" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Пиво разливное
+                    </button>
+                </h2>
+                <div id="collapseAlcohol6" class="accordion-collapse collapse" aria-labelledby="headingAlcohol6" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Прага</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">700 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">СССР</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Жигулёвское</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">700 тенге</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAlcohol7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlcohol7" aria-expanded="false" aria-controls="collapseMainCourses">
+                        Виски
+                    </button>
+                </h2>
+                <div id="collapseAlcohol7" class="accordion-collapse collapse" aria-labelledby="headingAlcohol7" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Jameson</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50мл - 1500 тенге</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item d-flex justify-content-between">
+                                    <p class="mb-0">Jack Daniels</p>
+                                    <div class="text-end">
+                                        <p class="mb-0">50 мл - 1800 тенге</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
         </div>
-        <button id="prev">Назад</button>
-        <button id="next">Вперед</button>
     </section>
 
     <footer>
